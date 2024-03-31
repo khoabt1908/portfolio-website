@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = ['.NET', 'TypeScript', 'React', 'Angular', 'Node.js', 'React Native'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,35 +135,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              As an enthusiastic individual with a deep passion for exploring cutting-edge technologies and tackling complex challenges, I firmly believe that these qualities will pave the way for me to excel as a full-stack developer. In addition to my keen interest in web development using .NET, React, and Angular.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              I have an unwavering fascination with data structures and algorithms. This fascination isn't just a passing interest; it's a driving force that fuels my desire to continuously improve my programming skills. I view coding not just as a profession but as a competitive arena, where I engage in programming competitions and challenges to further sharpen my problem-solving abilities. My journey as a developer is not merely a career path; it's a thrilling adventure marked by my dedication to mastering the intricacies of both front-end and back-end development.
             </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
-
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
@@ -173,7 +152,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/khoa.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

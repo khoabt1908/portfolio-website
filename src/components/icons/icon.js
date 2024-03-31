@@ -16,6 +16,8 @@ import {
   IconStar,
   IconTwitter,
 } from '@components/icons';
+import IconFacebook from './facebook';
+import IconLeetCode from './leetcode';
 
 const Icon = ({ name }) => {
   switch (name) {
@@ -47,6 +49,10 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'Facebook':
+      return <IconFacebook />;
+    case 'LeetCode':
+      return <IconLeetCode />;
     default:
       return <IconExternal />;
   }

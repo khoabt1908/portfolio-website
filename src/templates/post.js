@@ -78,7 +78,7 @@ const PostTemplate = ({ data, location }) => {
             {tags &&
               tags.length > 0 &&
               tags.map((tag, i) => (
-                <Link key={i} to={`/pensieve/tags/${kebabCase(tag)}/`} className="tag">
+                <Link key={i} to={`/`} className="tag">
                   #{tag}
                 </Link>
               ))}
@@ -98,17 +98,3 @@ PostTemplate.propTypes = {
   location: PropTypes.object,
 };
 
-export const pageQuery = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        description
-        date
-        slug
-        tags
-      }
-    }
-  }
-`;
